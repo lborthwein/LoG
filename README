@@ -1,0 +1,84 @@
+Legend of Giselda is a Linux Terminal-based dungeon crawler with terminal beep soundtrack and threads.  It was my final project for my first ever CS class :)
+
+
+Installation:
+
+The game was programmed in c and made to be compiled on nice.fas (Harvard computing environment) easily with the Makefile included.  The ncurses dev package is a dependency that needs to be installed on most linux in order to compile.  After you've done that, simply type “make” on your linux terminal in the game's directory and the program will compile into an executable called “g”.
+
+"make clean" will remove the executable.
+ 
+movez.c contains all of the code for the game can be found and the various .txt files in the style of #-#.txt where # denotes a number are the level data in ASCII code.
+
+ 
+
+To run the game, simply type “./g” into the terminal and press enter.
+
+ 
+
+***Important Note***
+
+Be sure that the window size of your terminal is 80 characters by 50 characters
+
+This should be the default terminal window size, and while larger sizes shouldn’t
+
+Have any adverse gameplay effects, smaller size will cause issues.
+
+ 
+
+ 
+
+Playing the Game:
+
+ 
+
+Now we’re ready to dive into the fun!
+
+ 
+
+You take control of a nameless hero, set out to conquer the evil demon, known only by the letter “A” on his crown, who inhabits the dark and mysterious dungeon.  You must slay a myriad of foes from the venomous Giant Scorpions and Bats to the Owlians and Bigheads in order to make your way to the demon’s chamber.
+
+ 
+
+Let’s go over the controls:
+
+In order to change directions and move, simply press the arrow key corresponding to where you want to go.
+
+ 
+
+In order to attack the vile enemies before you, press the spacebar to swing your sword.
+
+ 
+
+***Pro Tip***
+
+Your hero, because he is so heroic, is a lefty!  When he swings his sword, it covers an area from his left side through to directly in front of him.  Sometimes it is wisest to attack an enemy while facing to the right of it if it is coming at you from your right side.
+
+ 
+
+Here are some things to be worried about:
+
+If you are hit by an enemy, you will lose one of your 3 lives!  Avoid this at all costs.  An enemy hits you if it moves into you or you move into it before you kill it.
+
+ 
+
+It is worth noting that an enemy touching either your sword ( ‘ | ‘ ) or your shield ( ‘ } ‘ ) will not harm you, but they will if they touch you anywhere else on your body.
+
+ 
+
+When an enemy is killed, it explodes with purple blood that will get all over your character half the time.  Fear not, as no courageous dungeon crawler would be set back by getting a little purple ooze on him!  Continue moving and you can shake it off, it does no harm to you.
+
+ 
+
+The goal of the game is to make it through the dungeon, so explore, kill, and destroy that boss!
+
+ 
+
+ 
+
+Additional Notes:
+
+For the faint of heart who are having too difficult a time beating the game, if you like you can cheat by opening up the c file and altering the macro LIVES found at the top of the code to give yourself as many lives as you see fit (though 3 should be more than enough). 
+
+ 
+
+Additionally, you can make the game a bit tougher by lowering your lives to 1 and playing in hardcore mode!
